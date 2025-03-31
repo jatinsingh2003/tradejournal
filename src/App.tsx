@@ -19,7 +19,6 @@ import AnalyticsPage from "@/pages/AnalyticsPage";
 import SettingsPage from "@/pages/SettingsPage";
 import NotFound from "@/pages/NotFound";
 import { Analytics } from "@vercel/analytics/react";
-
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -58,14 +57,5 @@ const App = () => (
     </ThemeProvider>
   </QueryClientProvider>
 );
-
-function App() {
-  return (
-    <>
-      {/* Your existing app content */}
-      <Analytics />
-    </>
-  );
-}
 
 export default App;
